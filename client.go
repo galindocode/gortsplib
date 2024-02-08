@@ -19,16 +19,16 @@ import (
 	"github.com/pion/rtcp"
 	"github.com/pion/rtp"
 
-	"github.com/bluenviron/gortsplib/v4/pkg/auth"
-	"github.com/bluenviron/gortsplib/v4/pkg/base"
-	"github.com/bluenviron/gortsplib/v4/pkg/bytecounter"
-	"github.com/bluenviron/gortsplib/v4/pkg/conn"
-	"github.com/bluenviron/gortsplib/v4/pkg/description"
-	"github.com/bluenviron/gortsplib/v4/pkg/format"
-	"github.com/bluenviron/gortsplib/v4/pkg/headers"
-	"github.com/bluenviron/gortsplib/v4/pkg/liberrors"
-	"github.com/bluenviron/gortsplib/v4/pkg/rtptime"
-	"github.com/bluenviron/gortsplib/v4/pkg/sdp"
+	"github.com/galindocode/gortsplib/v4/pkg/auth"
+	"github.com/galindocode/gortsplib/v4/pkg/base"
+	"github.com/galindocode/gortsplib/v4/pkg/bytecounter"
+	"github.com/galindocode/gortsplib/v4/pkg/conn"
+	"github.com/galindocode/gortsplib/v4/pkg/description"
+	"github.com/galindocode/gortsplib/v4/pkg/format"
+	"github.com/galindocode/gortsplib/v4/pkg/headers"
+	"github.com/galindocode/gortsplib/v4/pkg/liberrors"
+	"github.com/galindocode/gortsplib/v4/pkg/rtptime"
+	"github.com/galindocode/gortsplib/v4/pkg/sdp"
 )
 
 // convert an URL into an address, in particular:

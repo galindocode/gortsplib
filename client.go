@@ -290,6 +290,7 @@ type Client struct {
 	checkTimeoutPeriod   time.Duration
 
 	connURL              *base.URL
+	headers              map[string]string
 	ctx                  context.Context
 	ctxCancel            func()
 	state                clientState
@@ -1631,6 +1632,12 @@ func (c *Client) doPlay(ra *headers.Range) (*base.Response, error) {
 		"Range": ra.Marshal(),
 	}
 
+	if c.headers != nil {
+		for k, v := range c.headers {
+			header[k] = base.HeaderValue{v}
+		}
+	}
+
 	if c.backChannelSetupped {
 		header["Require"] = base.HeaderValue{"www.onvif.org/ver20/backchannel"}
 	}
@@ -1672,6 +1679,14 @@ func (c *Client) doPlay(ra *headers.Range) (*base.Response, error) {
 	c.lastRange = ra
 
 	return res, nil
+}
+
+func (c *Client) SetHeader(key string, value string) error {
+	if c.headers == nil {
+		c.headers = make(map[string]string)
+	}
+	c.headers[key] = value
+	return nil
 }
 
 // Play sends a PLAY request.

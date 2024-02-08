@@ -9,8 +9,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bluenviron/gortsplib/v4/pkg/base"
-	"github.com/bluenviron/gortsplib/v4/pkg/liberrors"
+	"github.com/bluenviron/gortsplib/v44/pkg/liberrors"
+	"github.com/galindocode/gortsplib/v4/pkg/base"
 )
 
 func extractPort(address string) (int, error) {

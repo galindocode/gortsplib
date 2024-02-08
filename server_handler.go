@@ -1,8 +1,8 @@
 package gortsplib
 
 import (
-	"github.com/bluenviron/gortsplib/v4/pkg/base"
-	"github.com/bluenviron/gortsplib/v4/pkg/description"
+	"github.com/bluenviron/gortsplib/v44/pkg/description"
+	"github.com/galindocode/gortsplib/v4/pkg/base"
 )
 
 // ServerHandler is the interface implemented by all the server handlers.

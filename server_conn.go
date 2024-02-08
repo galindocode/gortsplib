@@ -10,11 +10,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bluenviron/gortsplib/v44/pkg/bytecounter"
-	"github.com/bluenviron/gortsplib/v44/pkg/conn"
-	"github.com/bluenviron/gortsplib/v44/pkg/description"
-	"github.com/bluenviron/gortsplib/v44/pkg/liberrors"
 	"github.com/galindocode/gortsplib/v4/pkg/base"
+	"github.com/galindocode/gortsplib/v4/pkg/bytecounter"
+	"github.com/galindocode/gortsplib/v4/pkg/conn"
+	"github.com/galindocode/gortsplib/v4/pkg/description"
+	"github.com/galindocode/gortsplib/v4/pkg/liberrors"
 )
 
 func getSessionID(header base.Header) string {

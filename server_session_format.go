@@ -6,11 +6,11 @@ import (
 	"github.com/pion/rtcp"
 	"github.com/pion/rtp"
 
-	"github.com/bluenviron/gortsplib/v44/pkg/liberrors"
-	"github.com/bluenviron/gortsplib/v44/pkg/rtcpreceiver"
-	"github.com/bluenviron/gortsplib/v44/pkg/rtplossdetector"
-	"github.com/bluenviron/gortsplib/v44/pkg/rtpreorderer"
 	"github.com/galindocode/gortsplib/v4/pkg/format"
+	"github.com/galindocode/gortsplib/v4/pkg/liberrors"
+	"github.com/galindocode/gortsplib/v4/pkg/rtcpreceiver"
+	"github.com/galindocode/gortsplib/v4/pkg/rtplossdetector"
+	"github.com/galindocode/gortsplib/v4/pkg/rtpreorderer"
 )
 
 type serverSessionFormat struct {

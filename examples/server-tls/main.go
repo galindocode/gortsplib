@@ -7,10 +7,10 @@ import (
 
 	"github.com/pion/rtp"
 
-	"github.com/bluenviron/gortsplib/v44/pkg/base"
-	"github.com/bluenviron/gortsplib/v44/pkg/description"
-	"github.com/bluenviron/gortsplib/v44/pkg/format"
 	"github.com/galindocode/gortsplib/v4"
+	"github.com/galindocode/gortsplib/v4/pkg/base"
+	"github.com/galindocode/gortsplib/v4/pkg/description"
+	"github.com/galindocode/gortsplib/v4/pkg/format"
 )
 
 // This example shows how to
